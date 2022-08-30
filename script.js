@@ -20,7 +20,7 @@ var path;
 function initMap()
 {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -33.4569400, lng: -70.6482700},
+    //center: {lat: -33.4569400, lng: -70.6482700},
     zoom: 8
   });
 
@@ -80,8 +80,11 @@ function plotMarkers(days)
       console.log(typeof day.destination_ref.destination);
       var position = new google.maps.LatLng(day.destination_ref.destination.latitude, day.destination_ref.destination.longitude);
 
+
+      var infoWindowContent = "<h2>"+day.name+"</h2><br/><br/><strong>"+day.destination_ref.destination.name+"</strong>";
+
       var infowindow = new google.maps.InfoWindow({
-        content: day.name,
+        content: infoWindowContent,
       });
 
       var marker = new google.maps.Marker({
@@ -108,9 +111,9 @@ function plotMarkers(days)
   var flightPath = new google.maps.Polyline({
           path: coords,
           geodesic: true,
-          strokeColor: '#4986E7',
+          strokeColor: '#00FFFF',
           strokeOpacity: 1.0,
-          strokeWeight: 2
+          strokeWeight: 5
         });
   
   flightPath.setMap(map);
