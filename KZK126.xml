@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root uuid="8a0092ff81dbc83b0181dd0cd1cb5df8">
+  <organizer>ANS</organizer>
+  <airTravel>ja</airTravel>
+  <location uuid="8a0092fd4e20f1fe014e24ec02427578" type="Region_Link">
+    <name>Französisch-Polynesien</name>
+    <latitude>-15.0000000</latitude>
+    <longitude>-140.0000000</longitude>
+    <region>Frankreich</region>
+    <country>Europa</country>
+  </location>
+  <country uuid="8a0092fd4e20f1fe014e24ec0f03005a" type="Land_Link">
+    <name>Australien</name>
+    <latitude>-25.0000000</latitude>
+    <longitude>135.0000000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e24ec08ba794f" type="Land_Link">
+    <name>Neuseeland</name>
+    <latitude>-42.0000000</latitude>
+    <longitude>174.0000000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e24e7dbd12233" type="Land_Link">
+    <name>Kanada</name>
+    <latitude>60.1086700</latitude>
+    <longitude>-113.6425800</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e24e7dfd825e1" type="Land_Link">
+    <name>USA</name>
+    <latitude>39.7600000</latitude>
+    <longitude>-98.5000000</longitude>
+  </country>
+  <itinerary uuid="8a0092ff81dbc83b0181dd2a24722bb0" type="Programmteil">
+    <name>Route</name>
+    <day uuid="8a0092ff81dbc83b0181dd2e00a0188b" type="Tag">
+      <name>1. Tag - Vancouver (Kanada)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3ea49bf814af" type="Ort_Link">
+          <name>Vancouver</name>
+          <latitude>49.2496600</latitude>
+          <longitude>-123.1193400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e010d195a" type="Tag">
+      <name>2. Tag - Vancouver (Kanada)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3ea49bf814af" type="Ort_Link">
+          <name>Vancouver</name>
+          <latitude>49.2496600</latitude>
+          <longitude>-123.1193400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e017a19af" type="Tag">
+      <name>3. Tag - Vancouver (Kanada)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3ea49bf814af" type="Ort_Link">
+          <name>Vancouver</name>
+          <latitude>49.2496600</latitude>
+          <longitude>-123.1193400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e01d81a04" type="Tag">
+      <name>4. - 8. Tag - Erholung auf See</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e02361a59" type="Tag">
+      <name>9. Tag - Hilo (Hawaii)</name>
+      <destination_ref>
+        <destination uuid="8a0092ff6ab43cfe016ad4a454ce3f56" type="Ort_Link">
+          <name>Hilo</name>
+          <latitude>19.7299100</latitude>
+          <longitude>-155.0907300</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e02941aae" type="Tag">
+      <name>10. Tag - Kailua Kona (Hawaii)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e24e886b64e88" type="Ort_Link">
+          <name>Kailua-Kona</name>
+          <latitude>19.6401600</latitude>
+          <longitude>-155.9991200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e03011b03" type="Tag">
+      <name>11. Tag - Lahaina (Maui/Hawaii)*</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e24e882d54aad" type="Ort_Link">
+          <name>Lahainaluna</name>
+          <latitude>20.8888300</latitude>
+          <longitude>-156.6592400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e035f1b58" type="Tag">
+      <name>12. Tag - Honolulu (Oahu/Hawaii)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e24e87f0846de" type="Ort_Link">
+          <name>Honolulu</name>
+          <latitude>21.3069400</latitude>
+          <longitude>-157.8583300</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e03bd1bad" type="Tag">
+      <name>13. - 17. Tag - Erholung auf See</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e042a1c02" type="Tag">
+      <name>18. Tag - Moorea (Franz. Polynesien)*</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e9f312a4415" type="Touristische Region_Link">
+          <name>Moorea</name>
+          <latitude>-17.5392810</latitude>
+          <longitude>-149.8307430</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e04881c57" type="Tag">
+      <name>19. Tag - Papeete (Tahiti/Franz. Polynesien)</name>
+      <destination_ref>
+        <destination uuid="8a0092ff69e746650169fcc49e481096" type="Ort_Link">
+          <name>Papeete</name>
+          <latitude>-17.5373300</latitude>
+          <longitude>-149.5665000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e04f51cac" type="Tag">
+      <name>20. Tag - Raiatea (Franz. Polynesien)*</name>
+      <destination_ref>
+        <destination uuid="8a0092ff684f9f4b016856377dac0e5c" type="Touristische Region_Link">
+          <name>Raiatea</name>
+          <latitude>-16.8100340</latitude>
+          <longitude>-151.4568420</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e05531d01" type="Tag">
+      <name>21. - 22. Tag - Erholung auf See</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e05c01d56" type="Tag">
+      <name>23. Tag - "Überquerung der internationalen Datumsgrenze. Der 12.10.23 entfällt</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e061e1dab" type="Tag">
+      <name>24. - 25. Tag - Erholung auf See</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e068b1e00" type="Tag">
+      <name>26. Tag - Auckland (Neuseeland)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3ea99c18682a" type="Ort_Link">
+          <name>Auckland</name>
+          <latitude>-36.8485300</latitude>
+          <longitude>174.7634900</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e06f91e55" type="Tag">
+      <name>27. Tag - Bay of Islands (Neuseeland)</name>
+      <destination_ref>
+        <destination uuid="8a0092ff65a3b04c0165ccbf728f7910" type="Touristische Region_Link">
+          <name>Bay of Islands</name>
+          <latitude>-35.1842690</latitude>
+          <longitude>174.1652030</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e07661eaa" type="Tag">
+      <name>28. - 29. Tag - Erholung auf See</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e07d31eff" type="Tag">
+      <name>30. Tag - Sydney (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ada00c3" type="Ort_Link">
+          <name>Sydney</name>
+          <latitude>-33.8678500</latitude>
+          <longitude>151.2073200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e08411f54" type="Tag">
+      <name>31. Tag - Sydney (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ada00c3" type="Ort_Link">
+          <name>Sydney</name>
+          <latitude>-33.8678500</latitude>
+          <longitude>151.2073200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e08ae1fa9" type="Tag">
+      <name>32. Tag - Sydney (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ada00c3" type="Ort_Link">
+          <name>Sydney</name>
+          <latitude>-33.8678500</latitude>
+          <longitude>151.2073200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e090c1ffe" type="Tag">
+      <name>33. Tag - Sydney (Australien) - Alice Springs (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ada00c3" type="Ort_Link">
+          <name>Sydney</name>
+          <latitude>-33.8678500</latitude>
+          <longitude>151.2073200</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ed104b5" type="Ort_Link">
+          <name>Alice Springs</name>
+          <latitude>-23.6974800</latitude>
+          <longitude>133.8836200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e09792053" type="Tag">
+      <name>34. Tag - Alice Springs (Australien) - Ayers Rock (Uluru Nationalpark)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e982ed104b5" type="Ort_Link">
+          <name>Alice Springs</name>
+          <latitude>-23.6974800</latitude>
+          <longitude>133.8836200</longitude>
+        </destination>
+        <destination uuid="8a0092ff65a3b04c01661fb158520cf9" type="Touristische Region_Link">
+          <name>Ayers Rock</name>
+          <latitude>-25.3441040</latitude>
+          <longitude>131.0368020</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e09e720a8" type="Tag">
+      <name>35. Tag - Ayers Rock (Uluru Nationalpark) - Melbourne (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e986aca3982" type="Ort_Link">
+          <name>Melbourne</name>
+          <latitude>-37.8140000</latitude>
+          <longitude>144.9633200</longitude>
+        </destination>
+        <destination uuid="8a0092ff65a3b04c01661fb158520cf9" type="Touristische Region_Link">
+          <name>Ayers Rock</name>
+          <latitude>-25.3441040</latitude>
+          <longitude>131.0368020</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e0a6420fd" type="Tag">
+      <name>36. Tag - Melbourne (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e986aca3982" type="Ort_Link">
+          <name>Melbourne</name>
+          <latitude>-37.8140000</latitude>
+          <longitude>144.9633200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e0ad12152" type="Tag">
+      <name>37. Tag - Melbourne (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e986aca3982" type="Ort_Link">
+          <name>Melbourne</name>
+          <latitude>-37.8140000</latitude>
+          <longitude>144.9633200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e0b3e21a7" type="Tag">
+      <name>38. Tag - Melbourne (Australien)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3e986aca3982" type="Ort_Link">
+          <name>Melbourne</name>
+          <latitude>-37.8140000</latitude>
+          <longitude>144.9633200</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff81dbc83b0181dd2e0bac21fc" type="Tag">
+      <name>39. Tag - Ankunft in Deutschland</name>
+      <destination_ref></destination_ref>
+    </day>
+  </itinerary>
+</root>

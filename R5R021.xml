@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root uuid="8a0092ff7f29e9a8017f2c35d3cd771a">
+  <organizer>ANS</organizer>
+  <airTravel>ja</airTravel>
+  <location uuid="8a0092fd4e20f1fe014e3f0188f52d6a" type="Touristische Region_Link">
+    <name>Machu Picchu</name>
+    <latitude>-13.1633330</latitude>
+    <longitude>-72.5455560</longitude>
+  </location>
+  <location uuid="8a0092ff682b92bc01683c3853f51773" type="Touristische Region_Link">
+    <name>Iguazú-Wasserfälle</name>
+    <latitude>-25.6951600</latitude>
+    <longitude>-54.4367320</longitude>
+  </location>
+  <country uuid="8a0092fd4e20f1fe014e3ef9f8e4215f" type="Land_Link">
+    <name>Argentinien</name>
+    <latitude>-34.0000000</latitude>
+    <longitude>-64.0000000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e3ef9c80076e0" type="Land_Link">
+    <name>Bolivien</name>
+    <latitude>-17.0000000</latitude>
+    <longitude>-65.0000000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e3ef9cc267aa9" type="Land_Link">
+    <name>Brasilien</name>
+    <latitude>-10.0000000</latitude>
+    <longitude>-55.0000000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e3ef9e68a11b3" type="Land_Link">
+    <name>Peru</name>
+    <latitude>-10.0000000</latitude>
+    <longitude>-75.2500000</longitude>
+  </country>
+  <country uuid="8a0092fd4e20f1fe014e3ef9d06c7e76" type="Land_Link">
+    <name>Chile</name>
+    <latitude>-30.0000000</latitude>
+    <longitude>-71.0000000</longitude>
+  </country>
+  <itinerary uuid="8a0092ff7f29e9a8017f2c52b34a2b5b" type="Programmteil">
+    <name>Rundreise</name>
+    <day uuid="8a0092ff7f29e9a8017f2c52b5953536" type="Tag">
+      <name>1. Tag - Anreise</name>
+      <destination_ref></destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52b67b39e7" type="Tag">
+      <name>2. Tag - Lima</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f019a9d3d66" type="Ort_Link">
+          <name>Lima</name>
+          <latitude>-12.0431800</latitude>
+          <longitude>-77.0282400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52b8094648" type="Tag">
+      <name>3. Tag - Lima - Flug nach Cusco</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f019a9d3d66" type="Ort_Link">
+          <name>Lima</name>
+          <latitude>-12.0431800</latitude>
+          <longitude>-77.0282400</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3f019ee3416e" type="Ort_Link">
+          <name>Cusco</name>
+          <latitude>-13.5226400</latitude>
+          <longitude>-71.9673400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52ba3b5e6d" type="Tag">
+      <name>4. Tag - Cusco - Machu Picchu - Cusco (ca. 225 km)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f019ee3416e" type="Ort_Link">
+          <name>Cusco</name>
+          <latitude>-13.5226400</latitude>
+          <longitude>-71.9673400</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3f019ee3416e" type="Ort_Link">
+          <name>Cusco</name>
+          <latitude>-13.5226400</latitude>
+          <longitude>-71.9673400</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3f0188f52d6a" type="Touristische Region_Link">
+          <name>Machu Picchu</name>
+          <latitude>-13.1633330</latitude>
+          <longitude>-72.5455560</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52bd201279" type="Tag">
+      <name>5. Tag - Cusco</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f019ee3416e" type="Ort_Link">
+          <name>Cusco</name>
+          <latitude>-13.5226400</latitude>
+          <longitude>-71.9673400</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52beb525e7" type="Tag">
+      <name>6. Tag - Cusco - Puno (ca. 340 km)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f019ee3416e" type="Ort_Link">
+          <name>Cusco</name>
+          <latitude>-13.5226400</latitude>
+          <longitude>-71.9673400</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3f0196573962" type="Ort_Link">
+          <name>Puno</name>
+          <latitude>-15.8422000</latitude>
+          <longitude>-70.0199000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52c0e24252" type="Tag">
+      <name>7. Tag - Puno - Titicacasee - Copacabana (ca. 140 km)</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3f0196573962" type="Ort_Link">
+          <name>Puno</name>
+          <latitude>-15.8422000</latitude>
+          <longitude>-70.0199000</longitude>
+        </destination>
+        <destination uuid="8a0092ff6994100301699662824d5614" type="Ort_Link">
+          <name>Copacabana//Titicacasee</name>
+          <latitude>-16.1699000</latitude>
+          <longitude>-69.0791900</longitude>
+        </destination>
+        <destination uuid="8a0092ff686f21f801687063abe70298" type="Touristische Region_Link">
+          <name>Titicacasee</name>
+          <latitude>-15.7986770</latitude>
+          <longitude>-69.3951440</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52c3d155f5" type="Tag">
+      <name>8. Tag - Copacabana - La Paz (ca. 160 km)</name>
+      <destination_ref>
+        <destination uuid="8a0092ff6994100301699662824d5614" type="Ort_Link">
+          <name>Copacabana//Titicacasee</name>
+          <latitude>-16.1699000</latitude>
+          <longitude>-69.0791900</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3efec13b7e72" type="Ort_Link">
+          <name>La Paz</name>
+          <latitude>-16.5000000</latitude>
+          <longitude>-68.1500000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52c65064f3" type="Tag">
+      <name>9. Tag - La Paz - Flug nach Santiago de Chile</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efec13b7e72" type="Ort_Link">
+          <name>La Paz</name>
+          <latitude>-16.5000000</latitude>
+          <longitude>-68.1500000</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3efed0dd0c55" type="Ort_Link">
+          <name>Santiago de Chile</name>
+          <latitude>-33.4569400</latitude>
+          <longitude>-70.6482700</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52c87f7839" type="Tag">
+      <name>10. Tag - Santiago de Chile</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efed0dd0c55" type="Ort_Link">
+          <name>Santiago de Chile</name>
+          <latitude>-33.4569400</latitude>
+          <longitude>-70.6482700</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52ca5506ec" type="Tag">
+      <name>11. Tag - Santiago de Chile</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efed0dd0c55" type="Ort_Link">
+          <name>Santiago de Chile</name>
+          <latitude>-33.4569400</latitude>
+          <longitude>-70.6482700</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52cbd11380" type="Tag">
+      <name>12. Tag - Santiago de Chile– Flug nach Buenos Aires</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efed0dd0c55" type="Ort_Link">
+          <name>Santiago de Chile</name>
+          <latitude>-33.4569400</latitude>
+          <longitude>-70.6482700</longitude>
+        </destination>
+        <destination uuid="8a0092fd4f0279b5014f20e4527f3154" type="Ort_Link">
+          <name>Buenos Aires</name>
+          <latitude>-34.6131500</latitude>
+          <longitude>-58.3772300</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52ce1b2b95" type="Tag">
+      <name>13. Tag - Buenos Aires</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4f0279b5014f20e4527f3154" type="Ort_Link">
+          <name>Buenos Aires</name>
+          <latitude>-34.6131500</latitude>
+          <longitude>-58.3772300</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52cfaf40e0" type="Tag">
+      <name>14. Tag - Buenos Aires - Flug nach Iguazú</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4f0279b5014f20e4527f3154" type="Ort_Link">
+          <name>Buenos Aires</name>
+          <latitude>-34.6131500</latitude>
+          <longitude>-58.3772300</longitude>
+        </destination>
+        <destination uuid="8a0092fd555f0b0101560da3d712475d" type="Ort_Link">
+          <name>Puerto Iguazú</name>
+          <latitude>-25.5991200</latitude>
+          <longitude>-54.5735500</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52d1ec6047" type="Tag">
+      <name>15. Tag - Iguazú</name>
+      <destination_ref>
+        <destination uuid="8a0092fd555f0b0101560da3d712475d" type="Ort_Link">
+          <name>Puerto Iguazú</name>
+          <latitude>-25.5991200</latitude>
+          <longitude>-54.5735500</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52d3a56a0c" type="Tag">
+      <name>16. Tag - Iguazú - Flug nach Rio de Janeiro</name>
+      <destination_ref>
+        <destination uuid="8a0092fd555f0b0101560da3d712475d" type="Ort_Link">
+          <name>Puerto Iguazú</name>
+          <latitude>-25.5991200</latitude>
+          <longitude>-54.5735500</longitude>
+        </destination>
+        <destination uuid="8a0092fd4e20f1fe014e3efe64d622de" type="Ort_Link">
+          <name>Rio de Janeiro</name>
+          <latitude>-22.9027800</latitude>
+          <longitude>-43.2075000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52d6197ed4" type="Tag">
+      <name>17. Tag - Rio de Janeiro</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efe64d622de" type="Ort_Link">
+          <name>Rio de Janeiro</name>
+          <latitude>-22.9027800</latitude>
+          <longitude>-43.2075000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52d7a81312" type="Tag">
+      <name>18. Tag - Abreise</name>
+      <destination_ref>
+        <destination uuid="8a0092fd4e20f1fe014e3efe64d622de" type="Ort_Link">
+          <name>Rio de Janeiro</name>
+          <latitude>-22.9027800</latitude>
+          <longitude>-43.2075000</longitude>
+        </destination>
+      </destination_ref>
+    </day>
+    <day uuid="8a0092ff7f29e9a8017f2c52d9762666" type="Tag">
+      <name>19. Tag - Ankunft in Deutschland</name>
+      <destination_ref></destination_ref>
+    </day>
+  </itinerary>
+</root>
