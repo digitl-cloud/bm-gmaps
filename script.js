@@ -4,7 +4,7 @@
     if (document.querySelector('html').lang)
       lang = document.querySelector('html').lang;
     else
-      lang = 'en';
+      lang = 'de';
 
     var js_file = document.createElement('script');
     js_file.type = 'text/javascript';
@@ -14,8 +14,8 @@
 });
 
 var map;
-
-// API Key: AIzaSyDvHrH49ggg4zB2tpRsu8I6ygD989Bx7go
+var service;
+var path; 
 
 function initMap()
 {
@@ -24,14 +24,18 @@ function initMap()
     zoom: 8
   });
 
+  //Intialize the Path Array
+  var path = new google.maps.MVCArray();
+
+  //Intialize the Direction Service
+  var service = new google.maps.DirectionsService();
+
   // fetch-Aufruf mit Pfad zur XML-Datei
   fetch ('KZK126.xml')
     .then (function (response) {
-      // Antwort kommt als Text-String
       return response.text();
     })
     .then (function (data) {
-      //console.log (data);       // schnell mal in der Konsole checken
 
       var x2js = new X2JS();
 
@@ -56,10 +60,13 @@ function initMap()
 
 var markers;
 var bounds;
+var coords;
+var counter = 0;
 
 function plotMarkers(days)
 {
   markers = [];
+  coords = [];
   bounds = new google.maps.LatLngBounds();
 
   console.log('plotMarkers');
@@ -67,8 +74,9 @@ function plotMarkers(days)
 
   days.forEach(function (day) {
     console.log(day);
+    counter++;
 
-    if (typeof day.destination_ref.destination != "undefined") {
+    if (typeof day.destination_ref.destination != "undefined" && day.destination_ref.destination.latitude && day.destination_ref.destination.longitude) {
       console.log(typeof day.destination_ref.destination);
       var position = new google.maps.LatLng(day.destination_ref.destination.latitude, day.destination_ref.destination.longitude);
 
@@ -91,10 +99,20 @@ function plotMarkers(days)
         });
       });
 
+      coords.push(position);
       markers.push(marker)
       bounds.extend(position);
     }
   });
 
+  var flightPath = new google.maps.Polyline({
+          path: coords,
+          geodesic: true,
+          strokeColor: '#4986E7',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+  
+  flightPath.setMap(map);
   map.fitBounds(bounds);
 }
