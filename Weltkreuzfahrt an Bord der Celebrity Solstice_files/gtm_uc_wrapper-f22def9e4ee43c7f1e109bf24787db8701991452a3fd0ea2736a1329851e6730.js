@@ -1,0 +1,1 @@
+function gtm_datalayer_push(e){window.dataLayer!==undefined&&window.dataLayer.find(function(e){return"consents_initialized"==e.event&&"from server setting"==e.usc_origin})?window.dataLayer.push(e):setTimeout(gtm_datalayer_push,500,e)}

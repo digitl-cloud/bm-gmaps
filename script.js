@@ -8,7 +8,7 @@
 
     var js_file = document.createElement('script');
     js_file.type = 'text/javascript';
-    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true&language=' + lang + '&key=AIzaSyDvHrH49ggg4zB2tpRsu8I6ygD989Bx7go';
+    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=localContext&v=beta&language=' + lang + '&key=AIzaSyDvHrH49ggg4zB2tpRsu8I6ygD989Bx7go';
     document.getElementsByTagName('head')[0].appendChild(js_file);
   }
 });
@@ -16,13 +16,28 @@
 var map;
 var service;
 var path; 
+var localContextMap;
 
 function initMap()
 {
-  map = new google.maps.Map(document.getElementById('map'), {
-    //center: {lat: -33.4569400, lng: -70.6482700},
-    zoom: 8
+
+  localContextMap = new google.maps.localContext.LocalContextMapView({
+    element: document.getElementById("map"),
+    placeTypePreferences: [
+      { type: "restaurant" },
+      { type: "tourist_attraction" },
+    ],
+    maxPlaceCount: 24,
   });
+
+  map = localContextMap.map;
+  map.setOptions({ 
+    zoom: 15 
+  }); 
+
+  map.addListener('click', () => { 
+     localContextMapView.hidePlaceDetailsView(); 
+  }); 
 
   //Intialize the Path Array
   var path = new google.maps.MVCArray();
@@ -81,7 +96,7 @@ function plotMarkers(days)
       var position = new google.maps.LatLng(day.destination_ref.destination.latitude, day.destination_ref.destination.longitude);
 
 
-      var infoWindowContent = "<h2>"+day.name+"</h2><br/><br/><strong>"+day.destination_ref.destination.name+"</strong>";
+      var infoWindowContent = "<h3>"+day.name+"</h3><strong>"+day.destination_ref.destination.name+"</strong>";
 
       var infowindow = new google.maps.InfoWindow({
         content: infoWindowContent,
