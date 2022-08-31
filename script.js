@@ -8,15 +8,16 @@
 
     var js_file = document.createElement('script');
     js_file.type = 'text/javascript';
-    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=localContext&v=beta&language=' + lang + '&key=AIzaSyDvHrH49ggg4zB2tpRsu8I6ygD989Bx7go';
+    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&mapId=82fda344a7fca373&libraries=places,localContext&sensor=true&v=beta&language=' + lang + '&key=AIzaSyDvHrH49ggg4zB2tpRsu8I6ygD989Bx7go';
     document.getElementsByTagName('head')[0].appendChild(js_file);
   }
 });
 
+
 var map;
 var service;
-var path; 
 var localContextMap;
+var placesService;
 
 function initMap()
 {
@@ -27,20 +28,13 @@ function initMap()
       { type: "restaurant" },
       { type: "tourist_attraction" },
     ],
-    maxPlaceCount: 24,
+    maxPlaceCount: 0
   });
 
   map = localContextMap.map;
   map.setOptions({ 
-    zoom: 15 
+    zoom: 15
   }); 
-
-  map.addListener('click', () => { 
-     localContextMapView.hidePlaceDetailsView(); 
-  }); 
-
-  //Intialize the Path Array
-  var path = new google.maps.MVCArray();
 
   //Intialize the Direction Service
   var service = new google.maps.DirectionsService();
@@ -113,8 +107,10 @@ function plotMarkers(days)
         infowindow.open({
           anchor: marker,
           map,
-          shouldFocus: false,
+          shouldFocus: true,
         });
+        localContextMap.maxPlaceCount = 12;
+        localContextMap.search();
       });
 
       coords.push(position);
@@ -134,3 +130,4 @@ function plotMarkers(days)
   flightPath.setMap(map);
   map.fitBounds(bounds);
 }
+
