@@ -7,3 +7,8 @@ html, body {
 #map {
   height: 100%;
 }
+
+h2, .h2 {
+    font-size: 1.55rem;
+    color:  #2a396b;
+}
