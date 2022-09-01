@@ -25,16 +25,33 @@
   localContextMap = new google.maps.localContext.LocalContextMapView({
     element: document.getElementById("map"),
     placeTypePreferences: [
-    { type: "restaurant" },
-    { type: "tourist_attraction" },
+      { type: "restaurant" },
+      { type: "tourist_attraction" },
+      { type: "night_club" },
+      { type: "clothing_store" },
+      { type: "convenience_store" },
+      { type: "department_store" },
+      { type: "cafe" },
+      { type: "bar" },
+      { type: "bakery" },
     ],
     maxPlaceCount: 0
   });
 
   map = localContextMap.map;
   map.setOptions({ 
-    zoom: 15
+    zoom: 15,
+    clickableIcons: true,
+    styles: {
+      featureType: "poi",
+      elementType: "labels",
+      stylers: [
+       { visibility: "on" }
+      ]
+    }
   }); 
+
+  console.log('clickable icons = ' + map.getClickableIcons());
 
   //Intialize the Direction Service
   var service = new google.maps.DirectionsService();
